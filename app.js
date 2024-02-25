@@ -2,6 +2,8 @@
 const app = express();
 const path = require('path');
 const ejs = require('ejs');
+const headerHelmet = require('helmet');
+var cors = require('cors')
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 const cookieParser = require('cookie-parser');
@@ -26,6 +28,9 @@ app.use(express.static(path.join(__dirname, 'static')))
 app.set('views', __dirname + '/views')
 app.set('view engine', ejs)
 app.use(cookieParser());
+app.use(headerHelmet());
+app.use(cors());
+
 
 // For Admin **********
 app.use('/0auth2', auth)
