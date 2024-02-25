@@ -22,7 +22,7 @@ const auth = require('./routes/app/auth');
 
 
 
-app.use(express.json())
+app.use(express.json({limit:'1mb'}))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'static')))
 app.set('views', __dirname + '/views')
