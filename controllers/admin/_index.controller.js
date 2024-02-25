@@ -1,4 +1,4 @@
-const dbCon = require('../config/db.config')
+const dbCon = require('../../config/db.config')
 
 
 // All Index routes

@@ -1,7 +1,7 @@
 const express = require('express');
 const route = express.Router();
-const { errorHandler } = require('../utils/errorHandler')
-const databaseCon = require('../config/db.config');
+const { errorHandler } = require('../../utils/errorHandler')
+const databaseCon = require('../../config/db.config');
 const { createHmac } = require('crypto');
 
 

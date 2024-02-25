@@ -10,12 +10,12 @@ const { errHandler } = require('./middleware/error')
 
 
 // Lottery Administrator 
-const auth = require('./controllers/adminAuth')
+const Adminauth = require('./controllers/admin/adminAuth')
 const indexRoutes = require('./routes/admin/indexRoutes')
 
 
 //User Api & Accessable By users,(App)
-const auth = require('./routes/employee/auth.js');
+const auth = require('./routes/app/auth');
 
 
 
@@ -34,8 +34,8 @@ app.use('/', indexRoutes)
 
 
 //  For Apps **********
-app.use('/apiV1')
-app.use('/apiV2')
+app.use('/apiV1',auth)
+// app.use('/apiV2',)
 
 
 
