@@ -30,3 +30,17 @@
 
 5.win_categories
 
+#### lotteries:
+(id, title, image, place, host, start Time, end Time ,other info, DisplayTop, displayResult,displayLottery )
+
+#### p_category :
+(id, lotteries.id,price)
+
+#### tickets :
+(id,lotteries.id, p_category.id, t_number,user_id)
+
+#### results:
+(id, lotteries.id,  p_category.id, ticket_number,user_id, displayTop, win_category.id)
+
+#### win_category:
+(id, title)
