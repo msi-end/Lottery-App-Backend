@@ -33,16 +33,16 @@
 6.lottery_linker_category
 
 #### lotteries:
-(id, title, image, place, host, start Time, end Time ,other info, DisplayTop, displayResult,displayLottery )
+(id, title, image, place, host, start Time, end Time ,other info, DisplayTop, displayResult, displayLottery )
 
 #### price_category :
 (id, price)
 
 #### lottry_linker_category :
-(id, lotteries.id,p_category. id)
+(id, lotteries.id, p_category. id)
 
 #### tickets :
-(id,lotteries.id, p_category.id, t_number,user_id)
+(id,lotteries.id, p_category.id, t_number, user_id)
 
 #### results:
 (id, lotteries.id,  p_category.id, ticket_number,user_id, displayTop, win_category.id)
