@@ -28,13 +28,18 @@
 
 4.price_categories
 
-5.win_categories
+5.win_category
+
+6.lottery_linker_category
 
 #### lotteries:
 (id, title, image, place, host, start Time, end Time ,other info, DisplayTop, displayResult,displayLottery )
 
-#### p_category :
-(id, lotteries.id,price)
+#### price_category :
+(id, price)
+
+#### lottry_linker_category :
+(id, lotteries.id,p_category. id)
 
 #### tickets :
 (id,lotteries.id, p_category.id, t_number,user_id)
